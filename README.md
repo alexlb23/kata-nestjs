@@ -1,34 +1,17 @@
 
-## Installation
-
-```bash
-$ npm install
-```
-
 ## Running the app
-
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+$ docker-compose up -d
+```
+## Jump into the app container
+```bash
+$ docker exec -it nest sh
 ```
 
-## Test
+## Import Data 
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+$ yarn console import
 ```
 
 

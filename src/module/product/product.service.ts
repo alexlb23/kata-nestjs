@@ -15,7 +15,7 @@ export class ProductService {
   }
 
   get(id: number): Promise<Product> {
-    return this.productRepository.findOne(id);
+    return this.productRepository.findOne({ where: { id } });
   }
 
   create(data: UpdateProductDto): Promise<Product> {
